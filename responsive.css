@@ -1,52 +1,111 @@
-@media (max-width:850px) {
-    .guessGame {
+@media (max-width:760px) {
+    .hiMessage>div {
+        font-size: 40px;
+    }
+
+    .aboutMe,
+    .skilss {
         flex-direction: column;
-        overflow: hidden;
-
-        align-items: center;
-        padding: 0;
-        padding-top: 21px;
+        padding: 10px;
     }
 
-    .titleGame {
-        margin: 0;
+    .aboutMe>img {
+        display: none;
     }
 
-    .keyColors {
-        font-size: 10px;
-        flex-direction: row;
-    }
-}
-
-@media (max-width:750px) {
-    .tryDiv input {
-        height: 40px;
-        width: 40px;
-    }
-
-    .key .wrong {
-        border-radius: 0;
-    }
-
-    .key .notInPlace {
-        border-radius: 0;
-    }
-
-    .key .inPlace {
-        border-radius: 0;
-    }
-
-    .inputContainers {
-        width: fit-content;
+    .rocket {
+        display: none;
     }
 }
 
 @media (max-width:450px) {
-    .guessGame {
-        justify-content: space-between;
+
+    video,
+    iframe,
+    .BMO {
+        display: none;
     }
 
-    .inputContainers {
-        height: 30vh;
+    .namePerson {
+        background-image: url(IMG/mars.jpg);
+        background-size: cover;
+    }
+
+    .hiMessage>div {
+        font-size: 26px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .aboutMe {
+        opacity: 1 !important;
+
+    }
+
+    .aboutMe,
+    .skilss {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .contactMe {
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .namePerson {
+        background-attachment: fixed;
+    }
+
+    .aboutMe,
+    .skilss,
+    .contactMe {
+        height: fit-content;
+        width: 90%;
+        margin-inline: auto;
+        animation-name: none !important;
+    }
+
+    .aboutMeAndSkills {
+        height: fit-content;
+        background-image: none;
+    }
+
+    .aboutMe>div>div {
+        font-size: 16px;
+        max-width: 396px;
+    }
+
+    .languageAndFr>div {
+        width: 46%;
+        font-size: 10px;
+    }
+
+    .aboutMe>div>span,
+    .skilss h1 {
+        font-size: 20px;
+    }
+
+    .skilss {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .iconContact {
+        width: 100%;
+    }
+
+    .iconContact>h1 {
+        font-size: 20px;
+    }
+
+    .iconContact img {
+        height: 35px;
+    }
+
+    .codedBy {
+        height: 40px;
+        margin-top: 40px;
     }
 }
