@@ -3,106 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
-   <link rel="stylesheet" href="responsive.css">
-    <title>SADDAM's PORTFOLIO</title>
+    <link rel="stylesheet" href="guess.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
 </head>
-<body>
- 
-        
-     <div class="linearGradient"></div>
-    <img class="rocket" src="IMG/startup.png" alt="">
-    <div class="namePerson">
-       <video autoplay muted loop>
-          <source src="IMG/background.mp4" type="video/mp4" />
-        </video>
-        <div class="hiMessage">
-            <div>HI!</div>
-            <div class="saddam"><div>I AM</div> <div>SADDAM</div></div>
-            <div>DUK</div>
-        </div>
-    </div>
-   <div class="aboutMeAndSkills">
-    <div class="aboutMe border">
-        <img src="IMG/MÜLTECİ - EYLÜL YAĞMURLARINDA.jpeg" alt="">
-        <div><span>WHO I AM ?</span> <div>Hello, my name is Saddam Duk. I am Syrian and I will be 17 years old. I am in the 10th grade and studying at GŞAL high school. I live in Ankara. I am interested in software, or more precisely, web software, which is a subsection of it. I am a young front-end software developer and my future goal is to have a good career. I want to study computer engineering at university. I'm currently making small projects to upload to my github account.</div></div>
-    </div>
-    <div class="skilss">
-<h1>WHAT DO I KNOW ?</h1>
-<div class="languageAndFr">
-<div>
-    <span>HTML</span>
-    <h4></h4>
-    <div class="html">
-        <span class="learningPercentageHtml" data-percentage="90"></span>
-    </div>
-</div>
-
-
-<div>
-    <span>CSS</span>
-    <h4></h4>
-    <div class="css">
-        <span class="learningPercentageCss" data-percentage="90"></span>
-    </div>
-</div>
-
-
-<div>
-    <span>JAVASCRIPT</span>
-    <h4></h4>
-    <div class="js">
-        <span class="learningPercentageJs" data-percentage="80"></span>
-    </div>
-</div>
-
-
-<div>
-    <span>ANGULAR</span>
-    <h4></h4>
-    <div class="Angular">
-        <span class="learningPercentageAngular" data-percentage="75"></span>
-    </div>
-</div>
- 
-
-<div>
-    <span>BOOTSTRAP</span>
-    <h4></h4>
-    <div class="Bootstrap">
-        <span class="learningPercentageBs" data-percentage="80"></span>
-    </div>
-</div>
- 
-
-<div>
-    <span>PHYTON</span>
-    <h4></h4>
-    <div class="phyton">
-        <span class="learningPercentagePy" data-percentage="40"></span>
-    </div>
-</div>
-
-</div>
+<body> 
+   <h1 class="titleGame"></h1>
+    <div class="guessGame">
+    <div class="inputContainers">
+<div class="controlButtons">
+    <div class="messageArea"></div>
+    <input class="control" type="button" value="Check World">
+    <input class="control hint" type="button" value="Hint">
 </div>
     </div>
-    <div class="contactMe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.7199739243!2d32.76276475!3d39.903376550000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347d520732db1%3A0xbdc57b0c0842b8d!2sAnkara!5e0!3m2!1str!2str!4v1705258055193!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="iconContact">
-        <h1>CONTACT ME</h1>
-        <div>
-            <div><a href="https://www.instagram.com/duk_sa4dam/" target="_blank"><img src="IMG/instagram.png" alt=""></a></div>
-            <div><a href="https://www.facebook.com/saddam.duk/?locale=tr_TR" target="_blank"><img src="IMG/facebook.png" alt=""></a></div>
-            <div> <a href="https://github.com/SaddamDuk" target="_blank"><img src="IMG/github.png"   alt=""></a></div>
-            <div> <a href="mailto:saddamduk3@gmail.com" target="_blank"><img src="IMG/mail.png"   alt=""></a></div>
-            <div><a href="https://www.linkedin.com/in/saddam-duk-7777462aa/" target="_blank"><img src="IMG/linkedin.png" alt=""></a></div>
-        </div>
-        <div><img class="BMO" src="IMG/BMO.jpeg" alt=""></div>
+
+<!-- Information For Game -->
+    <!--Information 1  -->
+<div class="keyColors">
+<h2>KEY COLORS</h2>
+    <div class="key">
+<div class="inPlace"></div>
+<div>Letter Is Corret and In place</div>
     </div>
+    <!--Information 2 -->
+    <div class="key">
+<div class="notInPlace"></div>
+<div>Letter Is Corret But Not In place</div>
     </div>
-    <div class="codedBy">
-    Coded By <span>SADDAM</span> 
+    <!--Information 3  -->
+    <div class="key">
+<div class="wrong"></div>
+<div>Letter Is Wrong</div>
     </div>
-    <script src="portfolio.js"></script>
+</div>
+</div>
+<div class="personCreatedGame">Guess The Word Game Created By <span>SADDAM DUK</span> </div>    
+<script src="guess.js"></script>
 </body>
 </html>
