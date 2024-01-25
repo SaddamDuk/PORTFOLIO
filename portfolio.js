@@ -1,23 +1,37 @@
 let imgPortfolio = document.querySelector(".aboutMe img")
 let aboutMe = document.querySelector(".aboutMe")
-let lightbulb = document.querySelector(".namePerson img")
-let controlLightbulb = true
-controlLightbulb = window.localStorage.getItem("controlLight")
 let getLandFr = document.querySelectorAll(".languageAndFr>div")
 let skilss = document.querySelector(".skilss")
 let hiMessage = document.querySelectorAll(".hiMessage>div")
 let contactMe = document.querySelector(".contactMe")
+let rocket = document.querySelector(".rocket")
 window.addEventListener("scroll", (a) => {
+    console.log();
+    hiMessage[0].style.marginRight = `${window.pageYOffset}px`
+    hiMessage[1].style.marginLeft = `${window.pageYOffset}px`
+    hiMessage[2].style.marginRight = `${window.pageYOffset}px`
+    if (window.pageYOffset > 666) {
+        aboutMe.style.opacity = "0"
+    } else {
+        aboutMe.style.opacity = "1"
+    }
+    if (window.pageYOffset > 1066) {
+        skilss.style.opacity = "0"
+    } else {
+        skilss.style.opacity = "1"
+    }
     if (window.pageYOffset > 50) {
         imgPortfolio.style.animationName = "opacityA"
         aboutMe.style.animationName = "filterA"
         aboutMe.classList.remove("border")
         aboutMe.style.backgroundColor = "#EEE"
+
     }
     else {
         imgPortfolio.style.animationName = ""
         aboutMe.style.animationName = ""
         aboutMe.classList.add("border")
+
     }
 
     if (window.pageYOffset > 450) {
@@ -72,23 +86,8 @@ setTimeout(saddam, 1000)
 setTimeout(duk, 1500)
 setTimeout(off, 2000)
 setTimeout(on, 2500)
-if (controlLightbulb == true || controlLightbulb == "true") {
-    document.body.style.backdropFilter = "none"
-    lightbulb.src = "IMG/idea.png"
-} if (controlLightbulb == false || controlLightbulb == "false") {
-    document.body.style.backdropFilter = "brightness(0.5)"
-    lightbulb.src = "IMG/idea (1).png"
-}
 
-lightbulb.addEventListener("click", function () {
-    controlLightbulb = !controlLightbulb
-    window.localStorage.setItem("controlLight", controlLightbulb)
-    if (controlLightbulb == true || controlLightbulb == "true") {
-        document.body.style.backdropFilter = "none"
-        lightbulb.src = "IMG/idea.png"
-    } if (controlLightbulb == false || controlLightbulb == "false") {
-        document.body.style.backdropFilter = "brightness(0.5)"
-        lightbulb.src = "IMG/idea (1).png"
-    }
-
-})
+setTimeout(() => {
+    rocket.style.left = `2000px`
+    console.log("saddam");
+}, 1000);
